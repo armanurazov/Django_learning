@@ -30,7 +30,6 @@ from django.urls import reverse
 
 #     return HttpResponseRedirect(webpage)
 
-def simple_view(request):
-    return render(request,'my_app/example.html')
+
 
 # Create your views here.

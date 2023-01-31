@@ -1,6 +1,6 @@
 
 <doctype html>
-
+    {% load static %}
     <html>
     <head>
     <title>Our Funky HTML Page</title>
@@ -9,7 +9,15 @@
     </head>
     <body>
     <h1> variable</h1>
-    <h1> {{first_name | upper}} and some text: {{some_dict.key1}}</h1>
-    
+    <h1> {{first_name | lower | capfirst}} and some text: {{some_dict.key1}}</h1>
+    {% for a,b in some_dict.items %}
+    <h2>some dext beeween</h2>
+    {{a | capfirst}}
+    {% endfor %}
+
+    {% if  some_dict.admin%}
+    <h1> You are logged in as admin</h1>
+    {% endif %}
+
     </body>
     </html> 
