@@ -8,8 +8,10 @@
     <meta name="keywords" content="html tutorial template">
     </head>
     <body>
-    <h1> exampleeeeeee</h1>
+    <h1> base</h1>
+    {% block content%}
 
-    <h2><a href="{% url 'my_app:variable' %}">click</a></h2>
+    {% endblock%}
+    <h2>end of base block</h2>
     </body>
     </html> 

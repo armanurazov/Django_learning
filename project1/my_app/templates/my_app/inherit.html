@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<h2> Some text in the inherit file </h2>
+
+{%comment%}
+<img src="{% static 'my_app/IMG_2459.jpg' %}" alt='my image'>
+{%endcomment%}
+<img src="{% static 'my_app/IMG_2459.jpg' %}" alt='my image'>
+
+{% endblock %}
+

@@ -1,4 +1,4 @@
-"""project1 URL Configuration
+"""project2 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -18,7 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('my_app/', include('my_app.urls'))
+    path('office/', include('office.urls'))
 ]
-
-handler404 = 'project1.views.my_custom_not_found_page'
